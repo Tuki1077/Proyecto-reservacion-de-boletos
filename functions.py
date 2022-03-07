@@ -15,7 +15,7 @@ def translate_to_number (n):
 
 def reservar_random(x):
     columna = ["A", "B", "C", "D", "E", "F"]
-    fila = [1,2,3]
+    fila = [1,2,3,4,5,6,7,8]
     random_num = ran.choice(columna)
     random_row = ran.choice(fila)
     random_column = translate_to_number(random_num)
