@@ -1,5 +1,8 @@
 # Proyecto-reservacion-de-boletos
 ## *Reserva tu boleto*
+<h3><b>pequeña descripcion del proyecto</b></h3><br>
+Este proyecto fue pensado como el sistema que se ocupa en un counter en el aeropuerto a la hora de reservar un boleto. Tiene ideas como, la reserva del boleto visual, asistencia de silla de ruedas, reservar un boleto de manera alealtoria y la funcion de una lista por prioridad. (Toma en cuenta a las personas de sillas de ruedas vs las de boletos normales.)<br><br>
+  
 ### Reserva tu boleto es un programa que simula un servicio para reservar boletos aereos. 
 Las funciones que este programa ofrece son: 
   - Pregunta cuantos boletos desea reservar y cual es la posicion exacta en la cual quiere reservar sus boletos.
@@ -11,3 +14,27 @@ Las funciones que este programa ofrece son:
   - Desocupar asiento
     - Este pregunta la posicion exacta en la cual desea desocupar su asiento para quitar "X".
       - Pregunta si el asiento era de una persona con ncesidades especiales para poder quitarle de igual manera de la linked list.
+
+
+<b>Las estructuras que fueron usadas en este proyecto: </b>
+  - Linked List
+  - Array de arrays (Matrices)
+  - manipulacion de strings
+
+<h2> Bienvenido al vuelo A138 </h2>
+
+
+![Bienvenido](https://user-images.githubusercontent.com/71049819/157096508-5e39e5b0-6e25-4747-9fe9-0196b38ad28c.png)
+
+<br> <br>Aaqui puede hacer sus reservaciones de su proximo vuelo! <br> Si usted ocupa una **silla de ruedas** siga este ejemplo <br>
+
+![ejemploSilla](https://user-images.githubusercontent.com/71049819/157097236-6049260f-c6fe-4340-83a9-f89779f23e84.png)
+
+<br> si no ocupa siga este otro ejemplo <br>
+
+![Ejemplo](https://user-images.githubusercontent.com/71049819/157097602-804efe1e-342b-4f2a-8753-57502e953921.png)
+
+<br> Usted sera asignado, Personas que requieren de servicios especiales seran los primeros en ser ingresados al avion. <br>
+
+<h3> Gracias por viajar en nuestro vuelo! </h3>
+
