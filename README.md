@@ -1,7 +1,7 @@
 # Proyecto-reservacion-de-boletos
 ## *Reserva tu boleto*
-<h2><b>*pequeña descripcion del proyecto*</b></h2><br>
-  Este proyecto fue pensado como el sistema que se ocupa en un counter en el aeropuerto a la hora de reservar un boleto. Tiene ideas como, la reserva del boleto visual, asistencia de silla de ruedas, reservar un boleto de manera alealtoria y la funcion de una lista por prioridad. (Toma en cuenta a las personas de sillas de ruedas vs las de boletos normales.)
+<h3><b>*pequeña descripcion del proyecto*</b></h3><br>
+  Este proyecto fue pensado como el sistema que se ocupa en un counter en el aeropuerto a la hora de reservar un boleto. Tiene ideas como, la reserva del boleto visual, asistencia de silla de ruedas, reservar un boleto de manera alealtoria y la funcion de una lista por prioridad. (Toma en cuenta a las personas de sillas de ruedas vs las de boletos normales.)<br>
 ### Reserva tu boleto es un programa que simula un servicio para reservar boletos aereos. 
 Las funciones que este programa ofrece son: 
   - Pregunta cuantos boletos desea reservar y cual es la posicion exacta en la cual quiere reservar sus boletos.
