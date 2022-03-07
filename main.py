@@ -26,7 +26,7 @@ A138 = np.array( [
     ["5","0","0","0","0","0","0"],
     ["6","0","0","0","0","0","0"],
     ["7","0","0","0","0","0","0"],
-    ["8","0","0","0","0","0","0"],
+    ["8","0","0","0","0","0","0"]
 ])
 
 menu = True
@@ -56,6 +56,7 @@ while menu == True:
             time.sleep(2)
             translate = fn.translate_to_number(user_column)
             reservacion = fn.reservar_boleto(A138,user_row, translate)
+            print (reservacion)
             rueda = link.silla(silla, user_row, user_column)
             contador = contador + 1
 
@@ -66,7 +67,7 @@ while menu == True:
     elif opcion == 4:
         user_column = input ("Ingrese la columna que desea remover: ")
         user_row = int(input("Ingrese la fila que desea remover: "))
-        silla = str(input("Necesitaba de servicios especiales? "))
+        silla = str(input("Necesitaba de servicios especiales? (Y/N) "))
         translate = fn.translate_to_number(user_column)
         if silla == "Y":
             ruedo = "Y"
