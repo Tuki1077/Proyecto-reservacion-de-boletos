@@ -74,14 +74,14 @@ print(llist)
 
 
 def silla(rueda ,user_row ,user_column):
-    if rueda == "si":
+    if rueda == "Y":
         esto = "!" + user_column + str(user_row)
         #add first
 
         llist.add_first(Node(esto))
         print(llist)
 
-    elif rueda == "no":
+    elif rueda == "N":
         esto = user_column + str(user_row)
         #add last
 
@@ -91,12 +91,12 @@ def silla(rueda ,user_row ,user_column):
         print("Ingrese si o no.")
 
 def remove(ruedo, user_row, user_column):
-    if ruedo == "si":
+    if ruedo == "Y":
         estos = "!" + user_column + str(user_row)
         llist.remove_node(estos)
         print(llist)
 
-    elif ruedo == "no":
+    elif ruedo == "N":
         estos = user_column + str(user_row)
         llist.remove_node(estos)
         print(llist)
