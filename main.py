@@ -45,6 +45,7 @@ while menu == True:
     if opcion == 1:
         for i in A138:
             print('\t'.join(map(str, i)))
+        print (link.llist)
     elif opcion == 2:
         y = int(input("Cuantos asientos desea reservar: "))
         contador = 0
@@ -55,28 +56,38 @@ while menu == True:
             print ("\n Procesando su solicitud... ")
             time.sleep(2)
             translate = fn.translate_to_number(user_column)
-            reservacion = fn.reservar_boleto(A138,user_row, translate)
+            if A138[user_row, translate] != "X":
+                reservacion = fn.reservar_boleto(A138,user_row, translate)
+                imprimir = fn.imprimir_asientos(A138)
+                rueda = link.silla(silla, user_row, user_column)
+            else: 
+                print ("Asiento ya reservado, intentelo de nuevo")
             print (reservacion)
-            rueda = link.silla(silla, user_row, user_column)
             contador = contador + 1
 
     elif opcion == 3:
-        reservar_random = fn.reservar_random(A138)
         print ("\n Procesando su solicitud...")
         time.sleep(2)
+        reservar_random = fn.reservar_random(A138)
+        imprimir_random = fn.imprimir_asientos(A138)
     elif opcion == 4:
+        #Funcion para remover boleto del array
         user_column = input ("Ingrese la columna que desea remover: ")
         user_row = int(input("Ingrese la fila que desea remover: "))
         silla = str(input("Necesitaba de servicios especiales? (Y/N) "))
+        print ("\n Procesando su solicitud... ")
+        time.sleep(2)
         translate = fn.translate_to_number(user_column)
         if silla == "Y":
             ruedo = "Y"
             remover = fn.remover_boleto(A138, user_row, translate)
             remove_linked = link.remove(ruedo, user_row, user_column)
+            imprimir_remover = fn.imprimir_asientos(A138)
         else:
             ruedo = "N"
-            remover = fn.remover_boleto(a138, user_row, translate)
+            remover = fn.remover_boleto(A138, user_row, translate)
             remove_linked = link.remove(ruedo, user_row, user_column)
+            imprimir_remover1 = fn.imprimir_asientos(A138)
     elif opcion == 5:
         print ("Gracias por utilizar nuestros servicios!...")
         menu = False
