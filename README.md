@@ -11,7 +11,7 @@ Las funciones que este programa ofrece son:
   - Desocupar asiento
     - Este pregunta la posicion exacta en la cual desea desocupar su asiento para quitar "X".
       - Pregunta si el asiento era de una persona con ncesidades especiales para poder quitarle de igual manera de la linked list.
-<b Las estructuras que fueron usadas en este proyecto:>
+<b> Las estructuras que fueron usadas en este proyecto: </b>
   - Linked List
   - Array de arrays (Matrices)
   - manipulacion de strings
