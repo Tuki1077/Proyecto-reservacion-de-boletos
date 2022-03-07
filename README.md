@@ -7,7 +7,7 @@ Este proyecto fue pensado como el sistema que se ocupa en un counter en el aerop
 Las funciones que este programa ofrece son: 
   - Pregunta cuantos boletos desea reservar y cual es la posicion exacta en la cual quiere reservar sus boletos.
     - Al momento que el cliente ingresa sus datos, se marca con una "X" la posicion o posiciones que el cliente reservo.
-  - Pregunta si el cliente es necesitado de servicios especiales. (Es decir, el uso de sila de ruedas)
+  - Pregunta si el cliente es necesitado de servicios especiales. (Es decir, el uso de silla de ruedas)
     - Los guarda en una linked list:
       - En donde la persona o personas que necesiten de cuidados especiales, entran como prioridad en el momento de abordar.  
   - Se puede ver la disponibilidad del avion aun cuando ya se haya hecho una reservacion. 
@@ -30,7 +30,7 @@ Las funciones que este programa ofrece son:
 
 ![ejemploSilla](https://user-images.githubusercontent.com/71049819/157097236-6049260f-c6fe-4340-83a9-f89779f23e84.png)
 
-<br> si no ocupa siga este otro ejemplo <br>
+<br> si no ocupa silla siga este otro ejemplo <br>
 
 ![Ejemplo](https://user-images.githubusercontent.com/71049819/157097602-804efe1e-342b-4f2a-8753-57502e953921.png)
 
