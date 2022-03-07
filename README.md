@@ -38,3 +38,11 @@ Las funciones que este programa ofrece son:
 
 <h3> Gracias por viajar en nuestro vuelo! </h3>
 
+
+<h2>Pruebas</h2> <br><br>
+
+Unittest
+![unittest](https://user-images.githubusercontent.com/71049819/157134992-57f87859-6aab-4324-88c5-85bd2f614b96.png)
+Profiling
+![profile](https://user-images.githubusercontent.com/71049819/157135055-043be5dd-4c3b-4b98-b71f-ad32e3820188.png)
+
