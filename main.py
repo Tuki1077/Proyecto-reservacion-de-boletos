@@ -16,7 +16,7 @@ print ("""
                                     /  .'         
                                     `-'
 """)
-
+#creacion del array
 A138 = np.array( [
     ["","A","B","C","D","E","F"],
     ["1","0","0","0","0","0","0"],
@@ -28,7 +28,7 @@ A138 = np.array( [
     ["7","0","0","0","0","0","0"],
     ["8","0","0","0","0","0","0"]
 ])
-
+#menu principal
 menu = True
 while menu == True:
     opcion = int(input(
@@ -42,10 +42,12 @@ while menu == True:
         
         """
     ))
+    #imprimir array
     if opcion == 1:
         for i in A138:
             print('\t'.join(map(str, i)))
         print (link.llist)
+        #reserva de asientos ya sea silla de ruedas o normal
     elif opcion == 2:
         y = int(input("Cuantos asientos desea reservar: "))
         contador = 0
@@ -64,14 +66,14 @@ while menu == True:
                 print ("Asiento ya reservado, intentelo de nuevo")
             print (reservacion)
             contador = contador + 1
-
+    #Random reserva solo de asientos normales
     elif opcion == 3:
         print ("\n Procesando su solicitud...")
         time.sleep(2)
         reservar_random = fn.reservar_random(A138)
         imprimir_random = fn.imprimir_asientos(A138)
+    #Funcion para remover boleto del array
     elif opcion == 4:
-        #Funcion para remover boleto del array
         user_column = input ("Ingrese la columna que desea remover: ")
         user_row = int(input("Ingrese la fila que desea remover: "))
         silla = str(input("Necesitaba de servicios especiales? (Y/N) "))
@@ -88,6 +90,7 @@ while menu == True:
             remover = fn.remover_boleto(A138, user_row, translate)
             remove_linked = link.remove(ruedo, user_row, user_column)
             imprimir_remover1 = fn.imprimir_asientos(A138)
+    #Salir del menu
     elif opcion == 5:
         print ("Gracias por utilizar nuestros servicios!...")
         menu = False

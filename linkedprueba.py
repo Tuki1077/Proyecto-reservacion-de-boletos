@@ -1,3 +1,4 @@
+#creacion de los nodos
 class Node:
     def __init__(self, data):
         self.data = data
@@ -8,7 +9,7 @@ class Node:
     
 
 class LinkedList:
-
+#se inicializa la linked list
     def __init__(self, nodes=None):
         self.head = None
         if nodes is not None:
@@ -17,13 +18,13 @@ class LinkedList:
             for elem in nodes:
                 node.next = Node(data=elem)
                 node = node.next
-
+#se itera la linked list
     def __iter__(self):
         node = self.head
         while node is not None:
             yield node
             node = node.next
-
+    #donde se hace append los nodos
     def __repr__(self):
         node = self.head
         nodes = []
@@ -33,11 +34,11 @@ class LinkedList:
         nodes.append("None")
         return " -> ".join(nodes)
     
-
+    #personas con silla de ruedas
     def add_first(self, node):
         node.next = self.head
         self.head = node
-
+    #esta funcion es para las personas sin silla de ruedas
     def add_last(self, node):
         if self.head is None:
             self.head = node
@@ -45,7 +46,7 @@ class LinkedList:
         for current_node in self:
             pass
         current_node.next = node
-    
+   #funcion que remueve el nodo que se busca en la linked list 
     def remove_node(self, target_node_data):
         if self.head is None:
             raise Exception("List is empty")
@@ -60,7 +61,7 @@ class LinkedList:
                 previous_node.next = node.next
                 return
             previous_node = node
-
+#esta funcion sera ocupada en nuestra siguiente entrega...
     def pop_front(self):
         if(self.head != None):
             temp = self.head
@@ -72,7 +73,7 @@ llist = LinkedList()
 print(llist)
 
 
-
+#aqui se hace la funcion donde se le pide el user input y la linked list lo organiza dependiendo de sus necesidades. (silla de ruedas o no)
 def silla(rueda ,user_row ,user_column):
     if rueda == "Y":
         esto = "!" + user_column + str(user_row)
@@ -90,6 +91,7 @@ def silla(rueda ,user_row ,user_column):
     else:
         print("Ingrese si o no.")
 
+#aqui quita el boleto de la linked list.
 def remove(ruedo, user_row, user_column):
     if ruedo == "Y":
         estos = "!" + user_column + str(user_row)
