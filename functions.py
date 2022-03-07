@@ -25,3 +25,12 @@ def reservar_random(x):
         print("Asiento ya esta ocupado, intente con otro asiento")
     for i in x:
         print('\t'.join(map(str, i)))
+    
+def remover_boleto (x, user_row, user_column):
+    if x[user_row, user_column] != "0":
+        x[user_row, user_column] = "0"
+    else:
+        print("Asiento no esta ocupado, intente con otro asiento")
+    for i in x:
+        print('\t'.join(map(str, i)))
+

@@ -73,38 +73,30 @@ print(llist)
 
 
 
-
-menu = True
-while menu == True:
-
-    row= int(input(" int: "))
-    column = str(input("str: "))
-    silla = str(input("silla? "))
-
-    if silla == "si":
-        esto = "!" + column + str(row)
+def silla(rueda ,user_row ,user_column):
+    if rueda == "si":
+        esto = "!" + user_column + str(user_row)
         #add first
 
         llist.add_first(Node(esto))
         print(llist)
 
-    elif silla == "no":
-        esto = column + str(row)
+    elif rueda == "no":
+        esto = user_column + str(user_row)
         #add last
 
         llist.add_last(Node(esto))
         print(llist)
-
     else:
-        menu = False
+        print("Ingrese si o no.")
 
+def remove(ruedo, user_row, user_column):
+    if ruedo == "si":
+        estos = "!" + user_column + str(user_row)
+        llist.remove_node(estos)
+        print(llist)
 
-    #remove
-    #llist.remove_node(esto)
-    #print(llist)
-
-
-    #llist.pop_front()
-    #print(llist)
-
-    #print(str(llist))
+    elif ruedo == "no":
+        estos = user_column + str(user_row)
+        llist.remove_node(estos)
+        print(llist)
