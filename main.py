@@ -3,6 +3,20 @@ import functions as fn
 import linkedprueba as link
 import time 
 
+print ("""
+                            __  _
+                            \ `/ |    Bienvenidos a Reserva tu boleto           
+                            \__`!
+                            / ,' `-.__________________
+                            '-'\_____              A138`-.
+                            <____()-=O=O=O=O=O=[]====--)
+                                `.___ ,-----,_______...-'
+                                    /    .'
+                                    /   .'
+                                    /  .'         
+                                    `-'
+""")
+
 A138 = np.array( [
     ["","A","B","C","D","E","F"],
     ["1","0","0","0","0","0","0"],
@@ -20,11 +34,11 @@ while menu == True:
     opcion = int(input(
         """
 
-        1. Ver disponibilidad de boletos
-        2. Reservar boleto de forma manual
-        3. Reserva boleto aleatoriamente
-        4. Desocupar asiento
-        5. Salir
+                            1. Ver disponibilidad de boletos
+                            2. Reservar boleto de forma manual
+                            3. Reserva boleto aleatoriamente
+                            4. Desocupar asiento
+                            5. Salir
         
         """
     ))
@@ -47,6 +61,8 @@ while menu == True:
 
     elif opcion == 3:
         reservar_random = fn.reservar_random(A138)
+        print ("\n Procesando su solicitud...")
+        time.sleep(2)
     elif opcion == 4:
         user_column = input ("Ingrese la columna que desea remover: ")
         user_row = int(input("Ingrese la fila que desea remover: "))
