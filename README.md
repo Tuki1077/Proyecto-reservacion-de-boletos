@@ -22,4 +22,10 @@ Las funciones que este programa ofrece son:
   - manipulacion de strings
 
 <h2> Bienvenido al vuelo A138 </h2>
-  ![Bienvenido](https://user-images.githubusercontent.com/71049819/157096508-5e39e5b0-6e25-4747-9fe9-0196b38ad28c.png)
+
+
+![Bienvenido](https://user-images.githubusercontent.com/71049819/157096508-5e39e5b0-6e25-4747-9fe9-0196b38ad28c.png)
+
+<br> <br> aqui puede hacer sus reservaciones de su proximo vuelo! <br> Si udted ocupa una silla de ruedas siga este ejemplo <br>
+
+
