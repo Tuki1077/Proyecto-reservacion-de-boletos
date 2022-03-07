@@ -26,6 +26,15 @@ Las funciones que este programa ofrece son:
 
 ![Bienvenido](https://user-images.githubusercontent.com/71049819/157096508-5e39e5b0-6e25-4747-9fe9-0196b38ad28c.png)
 
-<br> <br> aqui puede hacer sus reservaciones de su proximo vuelo! <br> Si udted ocupa una silla de ruedas siga este ejemplo <br>
+<br> <br>Aaqui puede hacer sus reservaciones de su proximo vuelo! <br> Si usted ocupa una **silla de ruedas** siga este ejemplo <br>
 
+![ejemploSilla](https://user-images.githubusercontent.com/71049819/157097236-6049260f-c6fe-4340-83a9-f89779f23e84.png)
+
+<br> si no ocupa siga este otro ejemplo <br>
+
+![Ejemplo](https://user-images.githubusercontent.com/71049819/157097602-804efe1e-342b-4f2a-8753-57502e953921.png)
+
+<br> Usted sera asignado, Personas que requieren de servicios especiales seran los primeros en ser ingresados al avion. <br>
+
+<h3> Gracias por viajar en nuestro vuelo! </h3>
 
