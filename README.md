@@ -30,7 +30,7 @@ Las funciones que este programa ofrece son:
 
 ![ejemploSilla](https://user-images.githubusercontent.com/71049819/157097236-6049260f-c6fe-4340-83a9-f89779f23e84.png)
 
-<br> si no ocupa siga este otro ejemplo <br>
+<br> si no ocupa silla siga este otro ejemplo <br>
 
 ![Ejemplo](https://user-images.githubusercontent.com/71049819/157097602-804efe1e-342b-4f2a-8753-57502e953921.png)
 
