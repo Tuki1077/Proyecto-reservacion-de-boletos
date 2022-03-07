@@ -42,7 +42,7 @@ def remover_boleto (x, user_row, user_column):
     else:
         return False
 
-    #testing 
+    #Used for testing 
 def random_for_testing (x):
     columna = ["A", "B", "C", "D", "E", "F"]
     fila = [1,2,3,4,5,6,7,8]
