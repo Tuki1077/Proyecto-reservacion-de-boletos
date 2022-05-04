@@ -94,6 +94,7 @@ while menu == True:
     elif opcion == 5:
         despegar = fn.despegar_avion()
         print ("El avion", despegar, "a despegado...")
+        link.empty()
         Arr = np.array( [
     ["","A","B","C","D","E","F"],
     ["1","0","0","0","0","0","0"],

@@ -66,7 +66,13 @@ class LinkedList:
         if(self.head != None):
             temp = self.head
             self.head = self.head.next
-            temp = None 
+            temp = None
+    
+    def deleteAllNodes(self):
+        while (self.head != None):
+            temp = self.head
+            self.head = self.head.next
+            temp = None
 
 #linkedList
 llist = LinkedList()
@@ -102,3 +108,6 @@ def remove(ruedo, user_row, user_column):
         estos = user_column + str(user_row)
         llist.remove_node(estos)
         print(llist)
+
+def empty():
+    llist.deleteAllNodes()
