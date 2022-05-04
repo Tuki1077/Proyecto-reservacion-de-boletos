@@ -1,3 +1,4 @@
+from asyncio.windows_events import NULL
 from collections import deque
 import queue as queue
 from re import I
@@ -12,11 +13,10 @@ for i in hangar:
     stack.append(temp)
 
 def stackit():
+    if len(stack) != 0:
+        last = stack.pop()
+        queue.a_queue.enqueue(last)
 
-    last = stack.pop()
-    queue.a_queue.enqueue(last)
-
-    return last
-
-
- 
+        return last
+    else:
+        return None

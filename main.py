@@ -110,7 +110,10 @@ while menu == True:
     elif opcion == 6:
         print("moviendo avion de hangar a lista de espera...")
         move = fn.agregar_avion_queue()
-        print("el avion", move, "se ha agregado a la lista de espera")
+        if move != None:
+            print("el avion", move, "se ha agregado a la lista de espera")
+        else:
+            print("El hangar se encuentra vacio")
 
     #Salir del menu
     elif opcion == 7:
