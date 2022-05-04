@@ -1,5 +1,6 @@
 import random as ran
 import linkedprueba as link
+import queue as queue
 
 #busca dentro del array para ver si esta o no disponible el asiento para marcarlo con X
 def reservar_boleto (x, user_row, user_column):
@@ -54,4 +55,8 @@ def random_for_testing (x):
         return True
     else:
         return False
+def despegar_avion():
+    despegar = queue.a_queue.dequeue()
+    return despegar
+
 

@@ -8,7 +8,7 @@ print ("""
                             \ `/ |    Bienvenidos a Reserva tu boleto           
                             \__`!
                             / ,' `-.__________________
-                            '-'\_____              A138`-.
+                            '-'\_____                 `-.
                             <____()-=O=O=O=O=O=[]====--)
                                 `.___ ,-----,_______...-'
                                     /    .'
@@ -17,7 +17,7 @@ print ("""
                                     `-'
 """)
 #creacion del array
-A138 = np.array( [
+Arr = np.array( [
     ["","A","B","C","D","E","F"],
     ["1","0","0","0","0","0","0"],
     ["2","0","0","0","0","0","0"],
@@ -38,13 +38,14 @@ while menu == True:
                             2. Reservar boleto de forma manual
                             3. Reserva boleto aleatoriamente
                             4. Desocupar asiento
-                            5. Salir
+                            5. Despegar avion
+                            6. Salir
         
         """
     ))
     #imprimir array
     if opcion == 1:
-        for i in A138:
+        for i in Arr:
             print('\t'.join(map(str, i)))
         print (link.llist)
         #reserva de asientos ya sea silla de ruedas o normal
@@ -58,9 +59,9 @@ while menu == True:
             print ("\n Procesando su solicitud... ")
             time.sleep(2)
             translate = fn.translate_to_number(user_column)
-            if A138[user_row, translate] != "X":
-                reservacion = fn.reservar_boleto(A138,user_row, translate)
-                imprimir = fn.imprimir_asientos(A138)
+            if Arr[user_row, translate] != "X":
+                reservacion = fn.reservar_boleto(Arr,user_row, translate)
+                imprimir = fn.imprimir_asientos(Arr)
                 rueda = link.silla(silla, user_row, user_column)
             else: 
                 print ("Asiento ya reservado, intentelo de nuevo")
@@ -70,8 +71,8 @@ while menu == True:
     elif opcion == 3:
         print ("\n Procesando su solicitud...")
         time.sleep(2)
-        reservar_random = fn.reservar_random(A138)
-        imprimir_random = fn.imprimir_asientos(A138)
+        reservar_random = fn.reservar_random(Arr)
+        imprimir_random = fn.imprimir_asientos(Arr)
     #Funcion para remover boleto del array
     elif opcion == 4:
         user_column = input ("Ingrese la columna que desea remover: ")
@@ -82,15 +83,30 @@ while menu == True:
         translate = fn.translate_to_number(user_column)
         if silla == "Y":
             ruedo = "Y"
-            remover = fn.remover_boleto(A138, user_row, translate)
+            remover = fn.remover_boleto(Arr, user_row, translate)
             remove_linked = link.remove(ruedo, user_row, user_column)
-            imprimir_remover = fn.imprimir_asientos(A138)
+            imprimir_remover = fn.imprimir_asientos(Arr)
         else:
             ruedo = "N"
-            remover = fn.remover_boleto(A138, user_row, translate)
+            remover = fn.remover_boleto(Arr, user_row, translate)
             remove_linked = link.remove(ruedo, user_row, user_column)
-            imprimir_remover1 = fn.imprimir_asientos(A138)
-    #Salir del menu
+            imprimir_remover1 = fn.imprimir_asientos(Arr)
     elif opcion == 5:
+        despegar = fn.despegar_avion()
+        print ("El avion", despegar, "a despegado...")
+        Arr = np.array( [
+    ["","A","B","C","D","E","F"],
+    ["1","0","0","0","0","0","0"],
+    ["2","0","0","0","0","0","0"],
+    ["3","0","0","0","0","0","0"],
+    ["4","0","0","0","0","0","0"],
+    ["5","0","0","0","0","0","0"],
+    ["6","0","0","0","0","0","0"],
+    ["7","0","0","0","0","0","0"],
+    ["8","0","0","0","0","0","0"]
+])
+    
+    #Salir del menu
+    elif opcion == 6:
         print ("Gracias por utilizar nuestros servicios!...")
         menu = False
