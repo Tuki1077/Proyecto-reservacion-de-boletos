@@ -8,7 +8,7 @@ print ("""
                             \ `/ |    Bienvenidos a Reserva tu boleto           
                             \__`!
                             / ,' `-.__________________
-                            '-'\_____                 `-.
+                            '-'\___  Churro airlines   `-.
                             <____()-=O=O=O=O=O=[]====--)
                                 `.___ ,-----,_______...-'
                                     /    .'
@@ -39,7 +39,8 @@ while menu == True:
                             3. Reserva boleto aleatoriamente
                             4. Desocupar asiento
                             5. Despegar avion
-                            6. Salir
+                            6. Agregar avion de hangar a lista de espera
+                            7. Salir
         
         """
     ))

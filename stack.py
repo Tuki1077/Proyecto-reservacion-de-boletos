@@ -3,7 +3,7 @@ from collections import deque
 import queue as queue
 from re import I
  
-hangar = ["U476", "F387"]
+hangar = ["U476", "F387", "P231", "H312", "D201"]
 stack = deque()
 
 temp = ""
