@@ -41,5 +41,11 @@ class test_funciones (unittest.TestCase):
         self.assertEqual (fn.remover_boleto(Avion_con_asiento_reservado,1,1), True)
     def test_despegar_avion (self):
         self.assertEqual(fn.despegar_avion(), "A155")
+        self.assertEqual(fn.despegar_avion(), "B453")
+        self.assertEqual(fn.despegar_avion(), "J783")
     def test_agregar_avion_queue(self):
         self.assertEqual(fn.agregar_avion_queue(), "D201")
+        self.assertEqual(fn.agregar_avion_queue(), "H312")
+        self.assertEqual(fn.agregar_avion_queue(), "P231")
+        self.assertEqual(fn.agregar_avion_queue(), "F387")
+        self.assertEqual(fn.agregar_avion_queue(), "U476")
