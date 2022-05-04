@@ -29,4 +29,5 @@ letra = "D"
 cProfile.run("func.reservar_boleto(Avion, 1, 1)")
 cProfile.run("func.translate_to_number(letra)")
 cProfile.run("func.reservar_random(Avion)")
-# cProfile.run("func.remover_boleto(Avion_con_asiento_reservado,1,1)")
+cProfile.run("func.agregar_avion_queue()")
+cProfile.run("func.despegar_avion()")
