@@ -93,19 +93,23 @@ while menu == True:
             imprimir_remover1 = fn.imprimir_asientos(Arr)
     elif opcion == 5:
         despegar = fn.despegar_avion()
-        print ("El avion", despegar, "a despegado...")
-        link.empty()
-        Arr = np.array( [
-    ["","A","B","C","D","E","F"],
-    ["1","0","0","0","0","0","0"],
-    ["2","0","0","0","0","0","0"],
-    ["3","0","0","0","0","0","0"],
-    ["4","0","0","0","0","0","0"],
-    ["5","0","0","0","0","0","0"],
-    ["6","0","0","0","0","0","0"],
-    ["7","0","0","0","0","0","0"],
-    ["8","0","0","0","0","0","0"]
-])
+        if despegar != None:
+            print ("El avion", despegar, "a despegado...")
+            link.empty()
+            Arr = np.array( [
+        ["","A","B","C","D","E","F"],
+        ["1","0","0","0","0","0","0"],
+        ["2","0","0","0","0","0","0"],
+        ["3","0","0","0","0","0","0"],
+        ["4","0","0","0","0","0","0"],
+        ["5","0","0","0","0","0","0"],
+        ["6","0","0","0","0","0","0"],
+        ["7","0","0","0","0","0","0"],
+        ["8","0","0","0","0","0","0"]
+    ]) 
+        else:
+            print("No se encuentran aviones disponibles en espera...")
+
 
     elif opcion == 6:
         print("moviendo avion de hangar a lista de espera...")
