@@ -28,8 +28,7 @@ class Queue:
             return to_return
  
 a_queue = Queue()
+
 a_queue.enqueue("A155")
 a_queue.enqueue("B453")
 a_queue.enqueue("J783")
-a_queue.enqueue("F387")
-a_queue.enqueue("U476")
