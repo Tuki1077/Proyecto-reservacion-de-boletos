@@ -49,3 +49,6 @@ class test_funciones (unittest.TestCase):
         self.assertEqual(fn.agregar_avion_queue(), "P231")
         self.assertEqual(fn.agregar_avion_queue(), "F387")
         self.assertEqual(fn.agregar_avion_queue(), "U476")
+
+if __name__ == '__main__':
+    unittest.main(verbosity=2)
