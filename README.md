@@ -1,5 +1,5 @@
 # Proyecto-reservacion-de-boletos
-## *Reserva tu boleto*
+## *Reserva tu boleto Entrega 1* 
 <h3><b>pequeña descripcion del proyecto</b></h3><br>
 Este proyecto fue pensado como el sistema que se ocupa en un counter en el aeropuerto a la hora de reservar un boleto. Tiene ideas como, la reserva del boleto visual, asistencia de silla de ruedas, reservar un boleto de manera alealtoria y la funcion de una lista por prioridad. (Toma en cuenta a las personas de sillas de ruedas vs las de boletos normales.)<br><br>
   
@@ -46,3 +46,5 @@ Unittest
 Profiling
 ![profile](https://user-images.githubusercontent.com/71049819/157135055-043be5dd-4c3b-4b98-b71f-ad32e3820188.png)
 
+## *Reserva tu boleto Entrega 2* 
+<h3><b>pequeña descripcion del proyecto</b></h3><br>
