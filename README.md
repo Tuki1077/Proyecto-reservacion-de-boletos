@@ -48,6 +48,28 @@ Profiling
 
 ## *Reserva tu boleto Entrega 2* 
 <h3><b>pequeña descripcion del proyecto</b></h3><br>
+Este proyecto es la secuela del proyecto anterior, Se le ha agregado un hangar el cual tiene guardados los aviones que no estan en uso, tambien se le implemento una lista de espera la cual tiene los aviones que estan listos para abordar pero no estan en uso aun. Se han agregado mas aviones los cuales pueden ser abordados 1 por 1 y ahora los aviones despegan.
+
+### Reserva tu boleto es un programa que simula un servicio para reservar boletos aereos. 
+Las funciones que este programa ofrece son: 
+  - A la hora de que despega un avion si hay aviones disponibles en la lista de espera podra mandar a llamar al primero en la lista para abordarlo.
+    - En el momento de que el avion sea llamado de la lista de espera el siguiente avion automaticamente se movera a la primera posicion.
+  - Tenemos aviones en un hangar los cuales se moveran de manera en que el ultimo en la lista sera el primero en salir del hangar.
+    - El hangar tiene aviones que no estan en uso que se pueden mover a la lista de espera si es necesario  
+
+
+<b>Las estructuras que fueron usadas en este proyecto: </b>
+  -Stacks
+  -Queue
 
 ## *Reserva tu boleto Entrega 3* 
 <h3><b>pequeña descripcion del proyecto</b></h3><br>
+(descripcion)
+
+### Reserva tu boleto es un programa que simula un servicio para reservar boletos aereos. 
+Las funciones que este programa ofrece son: 
+  -(cosas que ofrece)
+
+
+<b>Las estructuras que fueron usadas en este proyecto: </b>
+  -(estructuras)
