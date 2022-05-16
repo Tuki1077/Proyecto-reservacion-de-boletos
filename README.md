@@ -64,3 +64,12 @@ Las funciones que este programa ofrece son:
 
 ## *Reserva tu boleto Entrega 3* 
 <h3><b>pequeña descripcion del proyecto</b></h3><br>
+(descripcion)
+
+### Reserva tu boleto es un programa que simula un servicio para reservar boletos aereos. 
+Las funciones que este programa ofrece son: 
+  -(cosas que ofrece)
+
+
+<b>Las estructuras que fueron usadas en este proyecto: </b>
+  -(estructuras)
