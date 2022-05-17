@@ -4,5 +4,5 @@ digraph {
 	B [label="PTY (Tocumen IA)"]
 	L [label="PAR (Charles de Gualle)"]
 	A -> B
-	B -> L
+	B -> L [constraint=false]
 }

@@ -2,6 +2,7 @@ import numpy as np
 import functions as fn
 import linkedprueba as link
 import time 
+import grafo as graf
 
 print ("""
                             __  _
@@ -38,7 +39,8 @@ while menu == True:
                             4. Desocupar asiento
                             5. Despegar avion
                             6. Agregar avion de hangar a lista de espera
-                            7. Salir
+                            7. Ver Rutas del Dia
+                            8. Salir
     """)
     opcion = int(input())
     #imprimir array
@@ -116,8 +118,21 @@ while menu == True:
             print("el avion", move, "se ha agregado a la lista de espera")
         else:
             print("El hangar se encuentra vacio")
+    elif opcion == 7:
+        opcion_rutas = int(input("""
+                            1. Paris
+                            2. Miami
+                            3. Vancouver
+        """))
+        if opcion_rutas == 1:
+            Ruta_francia = graf.francia()
+        elif opcion_rutas == 2:
+            Ruta_Miami = graf.miami()
+        elif opcion_rutas == 3:
+            Ruta_Vancouver = graf.canada()
+
 
     #Salir del menu
-    elif opcion == 7:
+    elif opcion == 8:
         print ("Gracias por utilizar nuestros servicios!...")
         menu = False

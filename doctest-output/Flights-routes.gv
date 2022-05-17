@@ -1,0 +1,8 @@
+// Flight routes
+digraph {
+	V [label="YVR (Vancouver IA)"]
+	S [label="SFO (San Franciso IA"]
+	G [label="GUA (La aurora)"]
+	S -> V
+	G -> S
+}

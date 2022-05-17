@@ -44,11 +44,12 @@ class test_funciones (unittest.TestCase):
         self.assertEqual(fn.despegar_avion(), "B453")
         self.assertEqual(fn.despegar_avion(), "J783")
     def test_agregar_avion_queue(self):
-        self.assertEqual(fn.agregar_avion_queue(), "D201")
-        self.assertEqual(fn.agregar_avion_queue(), "H312")
-        self.assertEqual(fn.agregar_avion_queue(), "P231")
-        self.assertEqual(fn.agregar_avion_queue(), "F387")
-        self.assertEqual(fn.agregar_avion_queue(), "U476")
+        agregar_queue = fn.agregar_avion_queue()
+        self.assertEqual(agregar_queue, "D201")
+        agregar_queue2 = fn.agregar_avion_queue()
+        self.assertEqual(agregar_queue2, "H312")
+        agregar_queue3 = fn.agregar_avion_queue()
+        self.assertEqual(agregar_queue3, "P231")
 
 if __name__ == '__main__':
     unittest.main(verbosity=2)
