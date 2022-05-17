@@ -4,6 +4,7 @@ import os
 os.environ["PATH"] += os.pathsep + 'C:/Program Files/Graphviz/bin/'
 dot = graphviz.Digraph(comment = 'Flight routes')
 
+#Aqui definimos el grafo con ruta a Paris, Francia
 def francia():
     dot.node  ('A', 'GUA (La aurora)')
     dot.node ('B', 'PTY (Tocumen IA)')
@@ -18,6 +19,7 @@ def francia():
     dot.render('doctest-output/Flights-routes.gv', view=True)  # doctest: +SKIP
     'doctest-output/Flight-routes.gv.pdf'
 
+#Aqui definimos el grafo con ruta a Miami, USA
 def miami():
     dot.node  ('A', 'GUA (La aurora)')
     dot.node ('M', 'MIA (Miami IA)')
@@ -30,6 +32,7 @@ def miami():
     dot.render('doctest-output/Flights-routes.gv', view=True)  # doctest: +SKIP
     'doctest-output/Flight-routes.gv.pdf'
 
+#Aqui definimos el grafo con ruta a Vancouver, Canada
 def canada():
     dot.node ('V', 'YVR (Vancouver IA)')
     dot.node ('S', 'SFO (San Franciso IA')
@@ -41,5 +44,6 @@ def canada():
     print (dot.source)
 
 
+#render el pdf de los grafos
     dot.render('doctest-output/Flights-routes.gv', view=True)  # doctest: +SKIP
     'doctest-output/Flight-routes.gv.pdf'

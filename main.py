@@ -91,6 +91,7 @@ while menu == True:
             remover = fn.remover_boleto(Arr, user_row, translate)
             remove_linked = link.remove(ruedo, user_row, user_column)
             imprimir_remover1 = fn.imprimir_asientos(Arr)
+        #en el momento de despegar se hara un nuevo array listo para volver a ser ocupado
     elif opcion == 5:
         despegar = fn.despegar_avion()
         if despegar != None:
@@ -110,7 +111,7 @@ while menu == True:
         else:
             print("No se encuentran aviones disponibles en espera...")
 
-
+#funcion de llenar el queue a lo que sea necesario
     elif opcion == 6:
         print("moviendo avion de hangar a lista de espera...")
         move = fn.agregar_avion_queue()
