@@ -31,9 +31,7 @@ Arr = np.array( [
 #menu principal
 menu = True
 while menu == True:
-    opcion = int(input(
-        """
-
+    print ("""
                             1. Ver disponibilidad de boletos
                             2. Reservar boleto de forma manual
                             3. Reserva boleto aleatoriamente
@@ -41,9 +39,8 @@ while menu == True:
                             5. Despegar avion
                             6. Agregar avion de hangar a lista de espera
                             7. Salir
-        
-        """
-    ))
+    """)
+    opcion = int(input())
     #imprimir array
     if opcion == 1:
         for i in Arr:

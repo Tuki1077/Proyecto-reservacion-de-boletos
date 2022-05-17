@@ -1,0 +1,8 @@
+// Flight routes
+digraph {
+	A [label="GUA (La aurora)"]
+	B [label="PTY (Tocumen IA)"]
+	L [label="PAR (Charles de Gualle"]
+	A -> B
+	B -> L [constraint=false]
+}
