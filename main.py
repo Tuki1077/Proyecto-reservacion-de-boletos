@@ -1,6 +1,7 @@
 import numpy as np
 import functions as fn
 import linkedprueba as link
+import stack as stack
 import time 
 import grafo as graf
 
@@ -34,13 +35,14 @@ menu = True
 while menu == True:
     print ("""
                             1. Ver disponibilidad de boletos
-                            2. Reservar boleto de forma manual
-                            3. Reserva boleto aleatoriamente
-                            4. Desocupar asiento
-                            5. Despegar avion
-                            6. Agregar avion de hangar a lista de espera
-                            7. Ver Rutas del Dia
-                            8. Salir
+                            2. Ver asientos ya reservados
+                            3. Reservar boleto de forma manual
+                            4. Reserva boleto aleatoriamente
+                            5. Desocupar asiento
+                            6. Despegar avion
+                            7. Agregar avion de hangar a lista de espera
+                            8. Ver Rutas del Dia
+                            9. Salir
     """)
     opcion = int(input())
     #imprimir array
@@ -48,8 +50,12 @@ while menu == True:
         for i in Arr:
             print('\t'.join(map(str, i)))
         print (link.llist)
-        #reserva de asientos ya sea silla de ruedas o normal
+
     elif opcion == 2:
+        asiento_reservado = list(zip(*np.where(Arr == "X")))
+        print (asiento_reservado)
+        #reserva de asientos ya sea silla de ruedas o normal
+    elif opcion == 3:
         y = int(input("Cuantos asientos desea reservar: "))
         contador = 0
         while contador < y:
@@ -68,13 +74,13 @@ while menu == True:
             print (reservacion)
             contador = contador + 1
     #Random reserva solo de asientos normales
-    elif opcion == 3:
+    elif opcion == 4:
         print ("\n Procesando su solicitud...")
         time.sleep(2)
         reservar_random = fn.reservar_random(Arr)
         imprimir_random = fn.imprimir_asientos(Arr)
     #Funcion para remover boleto del array
-    elif opcion == 4:
+    elif opcion == 5:
         user_column = input ("Ingrese la columna que desea remover: ")
         user_row = int(input("Ingrese la fila que desea remover: "))
         silla = str(input("Necesitaba de servicios especiales? (Y/N) "))
@@ -91,11 +97,10 @@ while menu == True:
             remover = fn.remover_boleto(Arr, user_row, translate)
             remove_linked = link.remove(ruedo, user_row, user_column)
             imprimir_remover1 = fn.imprimir_asientos(Arr)
-        #en el momento de despegar se hara un nuevo array listo para volver a ser ocupado
-    elif opcion == 5:
+    elif opcion == 6:
         despegar = fn.despegar_avion()
         if despegar != None:
-            print ("El avion", despegar, "a despegado...")
+            print ("El avion", despegar, "se ha retirado a su destino...")
             link.empty()
             Arr = np.array( [
         ["","A","B","C","D","E","F"],
@@ -111,15 +116,21 @@ while menu == True:
         else:
             print("No se encuentran aviones disponibles en espera...")
 
-#funcion de llenar el queue a lo que sea necesario
-    elif opcion == 6:
-        print("moviendo avion de hangar a lista de espera...")
+
+    elif opcion == 7:
+        print ("Estos son los aviones que hay de momento:")
+        print(stack.hangar)
+        time.sleep(2)
+        print("\nmoviendo avion de hangar a lista de espera...")
+        time.sleep(2)
         move = fn.agregar_avion_queue()
         if move != None:
             print("el avion", move, "se ha agregado a la lista de espera")
         else:
             print("El hangar se encuentra vacio")
-    elif opcion == 7:
+        print("\nHangar actualizado:")
+        print (stack.stack)
+    elif opcion == 8:
         opcion_rutas = int(input("""
                             1. Paris
                             2. Miami
@@ -134,6 +145,6 @@ while menu == True:
 
 
     #Salir del menu
-    elif opcion == 8:
+    elif opcion == 9:
         print ("Gracias por utilizar nuestros servicios!...")
         menu = False
