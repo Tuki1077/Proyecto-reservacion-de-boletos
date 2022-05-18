@@ -42,8 +42,10 @@ class test_funciones (unittest.TestCase):
     def test_despegar_avion (self):
         despegar_primer_avion = fn.despegar_avion()
         self.assertEqual(despegar_primer_avion, "A155")
-        self.assertEqual(fn.despegar_avion(), "B453")
-        self.assertEqual(fn.despegar_avion(), "J783")
+        despegar_segundo_avion = fn.despegar_avion()
+        self.assertEqual(despegar_segundo_avion, "B453")
+        despegar_tercer_avion = fn.despegar_avion()
+        self.assertEqual(despegar_tercer_avion, "J783")
     def test_agregar_avion_queue(self):
         agregar_queue = fn.agregar_avion_queue()
         self.assertEqual(agregar_queue, "D201")
