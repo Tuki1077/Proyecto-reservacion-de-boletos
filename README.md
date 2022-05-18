@@ -75,10 +75,10 @@ Las funciones que este programa ofrece son:
   - Se implementaron Grafos para poder mostrar la rutas del dia y la rutas que tiene la aerolinea disponible
   - Se implemento un pequeño search para poder saber que lugar del array se encuentran ocupados. 
 
-#Video de ejecucion
-- [Video de ejecucion](https://github.com/Tuki1077/Proyecto-reservacion-de-boletos/blob/main/Video%20ejecucion%20Final)
+- Video de ejecucion
+  - [Video de ejecucion](https://github.com/Tuki1077/Proyecto-reservacion-de-boletos/blob/main/Video%20ejecucion%20Final)
 
-#JMETER para Stress Testing
+- JMETER para Stress Testing
 
 ![sampler 3](https://user-images.githubusercontent.com/71049819/169167235-930f896b-8d5b-4a8b-9027-bfe672b3f14a.jpg)
 
