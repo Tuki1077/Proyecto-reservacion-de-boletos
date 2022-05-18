@@ -19,10 +19,10 @@ def francia():
     'doctest-output/Flight-routes.gv.pdf'
 
 def miami():
-    dot.node  ('A', 'GUA (La aurora)')
+    dot.node  ('J', 'GUA (La aurora)')
     dot.node ('M', 'MIA (Miami IA)')
 
-    dot.edges(['AM'])
+    dot.edges(['JM'])
     
     print (dot.source)
 
