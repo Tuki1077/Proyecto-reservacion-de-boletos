@@ -34,13 +34,19 @@
             <collectionProp name="Arguments.arguments">
               <elementProp name="" elementType="Argument">
                 <stringProp name="Argument.name"></stringProp>
-                <stringProp name="Argument.value">C:\Users\juanl\OneDrive\Documentos\GitHub\Proyecto-reservacion-de-boletos\profiller.py</stringProp>
+                <stringProp name="Argument.value">C:\Users\juanl\OneDrive\Documentos\GitHub\Proyecto-reservacion-de-boletos\main2.py</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
           </elementProp>
           <elementProp name="SystemSampler.environment" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
-            <collectionProp name="Arguments.arguments"/>
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="opcion" elementType="Argument">
+                <stringProp name="Argument.name">opcion</stringProp>
+                <stringProp name="Argument.value">3</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
           </elementProp>
           <stringProp name="SystemSampler.directory"></stringProp>
         </SystemSampler>
