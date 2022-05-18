@@ -67,11 +67,17 @@ Las funciones que este programa ofrece son:
 
 ### Reserva tu boleto es un programa que simula un servicio para reservar boletos aereos. 
 Las funciones que este programa ofrece son: 
-  -(cosas que ofrece)
+  - Visualizar de manera grafica en un PDF que abre de forma automatica la distintas rutas que pueden tomar los clientes en el dia deseado.
+  - VIsualizar de manera grafica en un PDF las rutas que ofrece la aerolinea (no necesariamente del dia)
 
 
 <b>Las estructuras que fueron usadas en este proyecto: </b>
-  -(estructuras)
+  - Se implementaron Grafos para poder mostrar la rutas del dia y la rutas que tiene la aerolinea disponible
+  - Se implemento un pequeño search para poder saber que lugar del array se encuentran ocupados. 
+
+#Video de ejecucion
+- [Video] (https://github.com/Tuki1077/Proyecto-reservacion-de-boletos/blob/main/Video%20ejecucion%20Final)
+  
   
 <h2> Rutas a tomar </h2><br>
 
