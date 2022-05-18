@@ -5,6 +5,7 @@ os.environ["PATH"] += os.pathsep + 'C:/Program Files/Graphviz/bin/'
 dot = graphviz.Digraph(comment = 'Flight routes')
 dot1 = graphviz.Digraph(comment = 'Flight routes')
 dot2 = graphviz.Digraph(comment = 'Flight routes')
+w = graphviz.Digraph(comment = 'Flight routes')
 
 #Aqui definimos el grafo con ruta a Paris, Francia
 def francia():
@@ -44,8 +45,29 @@ def canada():
     dot2.edge ('G', 'S')
     
     print (dot2.source)
-
-
-#render el pdf de los grafos
-    dot.render('doctest-output/Flights-routes.gv', view=True)  # doctest: +SKIP
+    #render el pdf de los grafos
+    dot2.render('doctest-output/Flights-routes.gv', view=True)  # doctest: +SKIP
     'doctest-output/Flight-routes.gv.pdf'
+
+def rutas_areolinea():
+    w = graphviz.Digraph('wide')
+    w.node ('G', 'GUA')
+    w.node ('M', 'MIA')
+    w.node ('S', 'SFO')
+    w.node ('V', 'YVR')
+    w.node ('H', 'SAP')
+    w.node ('B', 'PPB')
+    w.node ('D', 'DFW')
+    w.edges(['GM'])
+    w.edges(['GS'])
+    w.edges(['GV'])
+    w.edges(['GH'])
+    w.edges(['GB'])
+    w.edges(['GD'])
+
+
+    u = w.unflatten(stagger=3)  
+    u.render('doctest-output/Flights-routes.gv', view=True)  # doctest: +SKIP
+    'doctest-output/Flight-routes.gv.pdf'
+
+

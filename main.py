@@ -6,17 +6,17 @@ import time
 import grafo as graf
 
 print ("""
-                            __  _
-                            \ `/ |    Bienvenidos a Reserva tu boleto           
-                            \__`!
-                            / ,' `-.__________________
-                            '-'\___  Churro airlines   `-.
-                            <____()-=O=O=O=O=O=[]====--)
-                                `.___ ,-----,_______...-'
-                                    /    .'
-                                    /   .'
-                                    /  .'         
-                                    `-'
+                                                        __  _
+                                                        \ `/ |    Bienvenidos a Reserva tu boleto           
+                                                        \__`!
+                                                        / ,' `-.__________________
+                                                        '-'\___  Churro airlines   `-.
+                                                        <____()-=O=O=O=O=O=[]====--)
+                                                            `.___ ,-----,_______...-'
+                                                                /    .'
+                                                                /   .'
+                                                                /  .'         
+                                                                `-'
 """)
 #creacion del array
 Arr = np.array( [
@@ -34,15 +34,11 @@ Arr = np.array( [
 menu = True
 while menu == True:
     print ("""
-                            1. Ver disponibilidad de boletos
-                            2. Ver asientos ya reservados
-                            3. Reservar boleto de forma manual
-                            4. Reserva boleto aleatoriamente
-                            5. Desocupar asiento
-                            6. Despegar avion
-                            7. Agregar avion de hangar a lista de espera
-                            8. Ver Rutas del Dia
-                            9. Salir
+                            1. Ver disponibilidad de boletos                 6. Despegar avion
+                            2. Ver asientos ya reservados                    7. Agregar avion de hangar a lista de espera
+                            3. Reservar boleto de forma manual               8. Ver Rutas del Dia
+                            4. Reserva boleto aleatoriamente                 9. Ver rutas de aerolinea 
+                            5. Desocupar asiento                             10. Salir
     """)
     opcion = int(input())
     #imprimir array
@@ -143,8 +139,9 @@ while menu == True:
         elif opcion_rutas == 3:
             Ruta_Vancouver = graf.canada()
 
-
-    #Salir del menu
     elif opcion == 9:
+        Ruta = graf.rutas_areolinea()
+    #Salir del menu
+    elif opcion == 10:
         print ("Gracias por utilizar nuestros servicios!...")
         menu = False

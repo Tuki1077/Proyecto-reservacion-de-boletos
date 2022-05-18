@@ -1,15 +1,8 @@
 digraph wide {
-	G	[label=GUA];
-	M	[label=MIA];
 	G -> M	[minlen=1];
-	S	[label=SFO];
 	G -> S	[minlen=2];
-	V	[label=YVR];
 	G -> V	[minlen=3];
-	H	[label=SAP];
 	G -> H	[minlen=1];
-	B	[label=PPB];
 	G -> B	[minlen=2];
-	D	[label=DFW];
 	G -> D	[minlen=3];
 }
