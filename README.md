@@ -79,7 +79,12 @@ Las funciones que este programa ofrece son:
 - [Video de ejecucion](https://github.com/Tuki1077/Proyecto-reservacion-de-boletos/blob/main/Video%20ejecucion%20Final)
 
 #JMETER para Stress Testing
-  
+
+![sampler 3](https://user-images.githubusercontent.com/71049819/169167235-930f896b-8d5b-4a8b-9027-bfe672b3f14a.jpg)
+
+![Sampler 2](https://user-images.githubusercontent.com/71049819/169167236-86e53222-d167-4a41-a674-ed7d4701355e.jpg)
+
+![sampler](https://user-images.githubusercontent.com/71049819/169167241-4a3ea3ff-8b02-4d4b-9e9f-565fe36cb590.jpg)
   
 <h2> Rutas a tomar </h2><br>
 
