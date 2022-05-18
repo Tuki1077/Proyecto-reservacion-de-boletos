@@ -21,10 +21,10 @@ def francia():
 
 #Aqui definimos el grafo con ruta a Miami, USA
 def miami():
-    dot.node  ('A', 'GUA (La aurora)')
+    dot.node  ('J', 'GUA (La aurora)')
     dot.node ('M', 'MIA (Miami IA)')
 
-    dot.edges(['AM'])
+    dot.edges(['JM'])
     
     print (dot.source)
 
