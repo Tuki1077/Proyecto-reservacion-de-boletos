@@ -50,20 +50,19 @@ def canada():
     'doctest-output/Flight-routes.gv.pdf'
 
 def rutas_areolinea():
-    w = graphviz.Digraph('wide')
     w.node ('G', 'GUA')
     w.node ('M', 'MIA')
     w.node ('S', 'SFO')
     w.node ('V', 'YVR')
     w.node ('H', 'SAP')
     w.node ('B', 'PPB')
-    w.node ('D', 'DFW')
+    w.node ('A', 'ANC')
     w.edges(['GM'])
-    w.edges(['GS'])
+    w.edges(['GA'])
     w.edges(['GV'])
     w.edges(['GH'])
     w.edges(['GB'])
-    w.edges(['GD'])
+    w.edges(['GS'])
 
 
     u = w.unflatten(stagger=3)  

@@ -1,4 +1,4 @@
-digraph wide {
+digraph {
 	G	[label=GUA];
 	M	[label=MIA];
 	G -> M	[minlen=1];
@@ -10,6 +10,6 @@ digraph wide {
 	G -> H	[minlen=1];
 	B	[label=PPB];
 	G -> B	[minlen=2];
-	D	[label=DFW];
-	G -> D	[minlen=3];
+	A	[label=ANC];
+	G -> A	[minlen=3];
 }
