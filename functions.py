@@ -56,10 +56,13 @@ def random_for_testing (x):
         return True
     else:
         return False
+
+ #used to deque the plane from the queue after takeoff
 def despegar_avion():
     despegar = queue.a_queue.dequeue()
     return despegar
 
+# se usa para agregar el avion del hangar a la lista de espera
 def agregar_avion_queue():
     queue = stack.stackit()
     return queue

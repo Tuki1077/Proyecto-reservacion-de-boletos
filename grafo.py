@@ -6,6 +6,7 @@ dot = graphviz.Digraph(comment = 'Flight routes')
 dot1 = graphviz.Digraph(comment = 'Flight routes')
 dot2 = graphviz.Digraph(comment = 'Flight routes')
 
+#Aqui definimos el grafo con ruta a Paris, Francia
 def francia():
     dot.node  ('A', 'GUA (La aurora)')
     dot.node ('B', 'PTY (Tocumen IA)')
@@ -20,6 +21,7 @@ def francia():
     dot.render('doctest-output/Flights-routes.gv', view=True)  # doctest: +SKIP
     'doctest-output/Flight-routes.gv.pdf'
 
+#Aqui definimos el grafo con ruta a Miami, USA
 def miami():
     dot1.node  ('J', 'GUA (La aurora)')
     dot1.node ('M', 'MIA (Miami IA)')
@@ -32,6 +34,7 @@ def miami():
     dot1.render('doctest-output/Flights-routes.gv', view=True)  # doctest: +SKIP
     'doctest-output/Flight-routes.gv.pdf'
 
+#Aqui definimos el grafo con ruta a Vancouver, Canada
 def canada():
     dot2.node ('V', 'YVR (Vancouver IA)')
     dot2.node ('S', 'SFO (San Franciso IA')
@@ -43,5 +46,6 @@ def canada():
     print (dot2.source)
 
 
+#render el pdf de los grafos
     dot.render('doctest-output/Flights-routes.gv', view=True)  # doctest: +SKIP
     'doctest-output/Flight-routes.gv.pdf'
