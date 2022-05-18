@@ -75,7 +75,7 @@ Las funciones que este programa ofrece son:
   - Se implementaron Grafos para poder mostrar la rutas del dia y la rutas que tiene la aerolinea disponible
   - Se implemento un pequeño search para poder saber que lugar del array se encuentran ocupados. 
 
-# Video de ejecucion
+#Video de ejecucion
 - [Video de ejecucion](https://github.com/Tuki1077/Proyecto-reservacion-de-boletos/blob/main/Video%20ejecucion%20Final)
   
   
@@ -86,3 +86,7 @@ Las funciones que este programa ofrece son:
 ![Miami](https://user-images.githubusercontent.com/71049819/168942997-b34acb63-fff3-4bb4-a71b-6e635419c98b.jpg)<br>
 
 ![Francia](https://user-images.githubusercontent.com/71049819/168943004-207d661a-b271-4d60-84ca-6b2f8a009337.jpg)<br>
+
+<h2>Tambien estas son las rutas generales que ofrecemos</h2>
+
+![all](https://user-images.githubusercontent.com/71049819/169166815-8102e795-95de-45b6-b474-b5aeaceb081c.jpg)
