@@ -73,3 +73,8 @@ Las funciones que este programa ofrece son:
 
 <b>Las estructuras que fueron usadas en este proyecto: </b>
   -(estructuras)
+  
+<h2> Rutas a tomar </h2>
+![Vancouver](https://user-images.githubusercontent.com/71049819/168942892-3cd71c6f-59cd-496f-8808-fda0cdb0419e.jpg)
+![Miami](https://user-images.githubusercontent.com/71049819/168942997-b34acb63-fff3-4bb4-a71b-6e635419c98b.jpg)
+![Francia](https://user-images.githubusercontent.com/71049819/168943004-207d661a-b271-4d60-84ca-6b2f8a009337.jpg)
