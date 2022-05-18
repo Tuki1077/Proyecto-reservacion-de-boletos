@@ -1,8 +1,0 @@
-digraph wide {
-	G -> M	[minlen=1];
-	G -> S	[minlen=2];
-	G -> V	[minlen=3];
-	G -> H	[minlen=1];
-	G -> B	[minlen=2];
-	G -> D	[minlen=3];
-}
