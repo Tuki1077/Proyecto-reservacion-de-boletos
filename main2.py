@@ -67,7 +67,6 @@ elif opcion == 3:
         user_row = random.choice(row)
         silla = random.choice(si_usa)
         print ("\n Procesando su solicitud... ")
-        time.sleep(2)
         translate = fn.translate_to_number(user_column)
         if Arr[user_row, translate] != "X":
             reservacion = fn.reservar_boleto(Arr,user_row, translate)
@@ -79,7 +78,6 @@ elif opcion == 3:
         contador = contador + 1
 elif opcion == 4:
         print ("\n Procesando su solicitud...")
-        time.sleep(2)
         reservar_random = fn.reservar_random(Arr)
         imprimir_random = fn.imprimir_asientos(Arr)
 elif opcion3 == 5:
@@ -87,7 +85,6 @@ elif opcion3 == 5:
         user_row = random.choice(row)
         silla = random.choice(si_usa)
         print ("\n Procesando su solicitud... ")
-        time.sleep(2)
         translate = fn.translate_to_number(user_column)
         if silla == "Y":
             ruedo = "Y"
